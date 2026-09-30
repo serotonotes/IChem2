@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>有機化学Ⅲ 復習</title>
+<style>
+:root{--bg:#f4f6f9;--paper:#ffffff;--ink:#17212e;--mute:#586577;--line:#dde3eb;--acc:#0e6e6a;--acc2:#e7f2f1;--blank:#b45309;--blankbg:#fff4e0;
+font-family:"Segoe UI","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.62}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11161d;--paper:#19212b;--ink:#e6ebf1;--mute:#9aa7b6;--line:#2b3542;--acc:#5cc5bd;--acc2:#1b2d2e;--blank:#f5b454;--blankbg:#33281a}}
+:root[data-theme="dark"]{--bg:#11161d;--paper:#19212b;--ink:#e6ebf1;--mute:#9aa7b6;--line:#2b3542;--acc:#5cc5bd;--acc2:#1b2d2e;--blank:#f5b454;--blankbg:#33281a}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg)}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:980px;margin:0 auto;padding:34px 20px 70px}
+header h1{font-size:1.7rem;line-height:1.3;margin:0 0 6px}
+header p{margin:0 0 6px;color:var(--mute)} .note{font-size:.84rem}
+.how{background:var(--acc2);border-left:4px solid var(--acc);border-radius:8px;padding:12px 16px;margin:20px 0 8px}
+.how b{display:block;font-size:.82rem;color:var(--acc);margin-bottom:6px}
+.how ol{margin:0;padding:0;list-style:none;counter-reset:f}
+.how li{counter-increment:f;position:relative;padding:4px 0 4px 30px}
+.how li::before{content:counter(f);position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:50%;background:var(--acc);color:var(--paper);font-size:.74rem;display:grid;place-items:center;font-weight:700}
+.demo{background:var(--blankbg);color:var(--blank);border-bottom:2px solid var(--blank);border-radius:3px;padding:0 4px;font-weight:600}
+h2.sec{font-size:.85rem;color:var(--mute);font-weight:600;margin:30px 0 10px;letter-spacing:.04em}
+.grid{display:grid;gap:18px}
+.card{display:block;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px 26px;color:var(--ink);text-decoration:none;transition:border-color .15s,transform .15s}
+a.card:hover,a.card:focus-visible{border-color:var(--acc);transform:translateY(-2px);outline:none}
+a.card:focus-visible{box-shadow:0 0 0 2px var(--acc)}
+.top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.ch{color:var(--acc);font-weight:700;font-size:1.9rem;font-variant-numeric:tabular-nums;line-height:1}
+.ch small{font-size:.8rem;font-weight:600;margin-left:2px}
+.card h3{margin:0;font-size:1.2rem}
+.meta{margin:6px 0 0;color:var(--mute);font-size:.86rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0;padding:0;list-style:none}
+.tags li{font-size:.8rem;border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--ink);background:var(--bg)}
+.go{display:inline-block;margin-top:14px;font-weight:600;color:var(--acc);font-size:.9rem}
+footer{margin-top:40px;color:var(--mute);font-size:.8rem;text-align:center}
+@media (max-width:600px){.wrap{padding:22px 14px 50px}.card{padding:16px 16px}header h1{font-size:1.4rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.links a{font-weight:600;color:var(--acc);font-size:.9rem;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:6px 12px;background:var(--bg)}.links a:hover{border-color:var(--acc)}.lang{float:right;font-size:.85rem;color:var(--acc);font-weight:600;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--paper)}
+</style></head><body>
+<div class="wrap">
+<header>
+<a class="lang" href="index_en.html">English</a>
+<h1>無機化学Ⅱ 復習</h1>
+<p>チートシート — 中間試験範囲(第4章〜第6章)</p>
+<p class="note">教科書:Shriver &amp; Weller, Inorganic Chemistry 6th ed.。構造式・図はすべて教科書ページから切り出し。</p>
+<div class="how"><b>使い方</b><ol>
+<li>章を選び、ドリル版か完全版を開く</li>
+<li>ドリル版:空欄(<span class="demo">例</span>)やぼかした図をタップすると答えが出る</li>
+<li>「すべて表示/すべて隠す」で一括切替 → 章末問題で確認</li>
+</ol></div>
+</header>
+<h2 class="sec">章一覧</h2>
+<div class="grid">
+<div class="card">
+<div class="top"><span class="ch">4<small>章</small></span><h3>酸と塩基</h3></div>
+<p class="meta">Brønsted・Lewis・非水溶媒 · 4.1–4.15 · 章末問題 4.1–4.50</p>
+<ul class="tags"><li>Brønsted酸塩基</li><li>Ka・pKa</li><li>アクア酸</li><li>Paulingの規則</li><li>酸化物・両性</li><li>Lewis酸塩基</li><li>HSAB</li><li>Drago–Wayland</li><li>水平化効果</li><li>超酸</li></ul>
+<div class="links"><a href="Inorg2_Ch4_JP_drill.html">ドリル版 →</a><a href="Inorg2_Ch4_JP_full.html">完全版 →</a></div>
+</div>
+
+<div class="card">
+<div class="top"><span class="ch">5<small>章</small></span><h3>酸化と還元</h3></div>
+<p class="meta">還元電位・酸化還元安定性・元素の抽出 · 5.1–5.18 · 章末問題 5.1–5.31</p>
+<ul class="tags"><li>標準電位</li><li>Nernst式</li><li>pH依存性</li><li>水の安定領域</li><li>不均化・均化</li><li>錯形成の影響</li><li>Latimer図</li><li>Frost図</li><li>Pourbaix図</li><li>Ellingham図</li></ul>
+<div class="links"><a href="Inorg2_Ch5_JP_drill.html">ドリル版 →</a><a href="Inorg2_Ch5_JP_full.html">完全版 →</a></div>
+</div>
+
+<div class="card">
+<div class="top"><span class="ch">6<small>章</small></span><h3>分子の対称性</h3></div>
+<p class="meta">対称性解析・応用・分子軌道・表現 · 6.1–6.10 · 章末問題 6.1–6.12</p>
+<ul class="tags"><li>対称操作</li><li>点群の決定木</li><li>指標表</li><li>極性・キラリティー</li><li>分子振動</li><li>交互禁制律</li><li>SALC</li><li>簡約公式</li><li>射影演算子</li></ul>
+<div class="links"><a href="Inorg2_Ch6_JP_drill.html">ドリル版 →</a><a href="Inorg2_Ch6_JP_full.html">完全版 →</a></div>
+</div>
+</div>
+<footer>個人学習用</footer>
+</div>
+</body></html>
